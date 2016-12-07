@@ -91,6 +91,7 @@
      * @param {Node} node - The DOM Node object to render
      * @param {Object} options - Rendering options, @see {@link toSvg}
      * @return {Promise} - A promise that is fulfilled with a PNG image data URL
+     * Note: Can return the SVG from the link now.
      * */
     function toPng(node, options) {
         return draw(node, options || {})
